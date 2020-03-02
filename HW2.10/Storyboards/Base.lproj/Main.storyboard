@@ -102,6 +102,7 @@
                                 <connections>
                                     <outlet property="dataImageView" destination="zQc-3W-QJQ" id="0VB-UE-RYu"/>
                                     <outlet property="dataTitleLabel" destination="S7F-hE-5ah" id="uD3-aV-zoF"/>
+                                    <segue destination="BzG-eb-0hk" kind="showDetail" identifier="showDetail" id="ql3-KT-3Sp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,6 +116,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAG-X6-nfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1967" y="130"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Pgb-ty-fqd">
+            <objects>
+                <viewController id="BzG-eb-0hk" customClass="DetailViewController" customModule="HW2_10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8o-4t-qVk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XP4-il-HhO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="sPi-KL-dOm"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="06X-qQ-8yD">
+                                <rect key="frame" x="16" y="316" width="343" height="315"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="06X-qQ-8yD" firstAttribute="top" secondItem="XP4-il-HhO" secondAttribute="bottom" constant="16" id="0PC-g3-FaR"/>
+                            <constraint firstItem="u83-HL-11B" firstAttribute="trailing" secondItem="06X-qQ-8yD" secondAttribute="trailing" constant="16" id="C0q-8V-DYm"/>
+                            <constraint firstItem="06X-qQ-8yD" firstAttribute="leading" secondItem="u83-HL-11B" secondAttribute="leading" constant="16" id="E7d-5U-DJI"/>
+                            <constraint firstItem="XP4-il-HhO" firstAttribute="top" secondItem="u83-HL-11B" secondAttribute="top" id="Yk4-gb-0O4"/>
+                            <constraint firstItem="u83-HL-11B" firstAttribute="bottom" secondItem="06X-qQ-8yD" secondAttribute="bottom" constant="16" id="wXm-9O-Rld"/>
+                            <constraint firstItem="XP4-il-HhO" firstAttribute="leading" secondItem="u83-HL-11B" secondAttribute="leading" id="xVD-YW-dzg"/>
+                            <constraint firstItem="u83-HL-11B" firstAttribute="trailing" secondItem="XP4-il-HhO" secondAttribute="trailing" id="yez-fO-djX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u83-HL-11B"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemImageView" destination="XP4-il-HhO" id="04H-7N-8f0"/>
+                        <outlet property="itemTextView" destination="06X-qQ-8yD" id="dFg-Ha-5Gx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOr-wB-QuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v15-wc-fUx">

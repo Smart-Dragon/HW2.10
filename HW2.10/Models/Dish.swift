@@ -14,5 +14,6 @@ struct Dish: Decodable {
 
 extension Dish: DataProtocol {
     var dataName: String { return strMeal ?? "" }
-    var dataImgUrl: String { return strMealThumb ?? ""}
+    var dataImgUrl: String { return strMealThumb ?? "" }
+    var dataDescription: String { return "А тут могло бы быть описание, будь оно в API." }
 }

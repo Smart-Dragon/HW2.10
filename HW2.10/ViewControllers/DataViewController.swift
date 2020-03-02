@@ -14,6 +14,10 @@ class DataViewController: UITableViewController {
     
     var items: [DataProtocol] = []
     
+    // MARK: - Private Properties
+    
+    private let segueDetail = "showDetail"
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,6 +35,17 @@ class DataViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         80
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueDetail {
+            let detailVC = segue.destination as! DetailViewController
+            if let row = tableView.indexPathForSelectedRow?.row {
+                detailVC.item = items[row]
+            }
+        }
     }
 
 }

@@ -9,4 +9,5 @@
 protocol DataProtocol {
     var dataName: String { get }
     var dataImgUrl: String { get }
+    var dataDescription: String { get }
 }

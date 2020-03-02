@@ -15,4 +15,5 @@ struct Cocktail: Decodable {
 extension Cocktail: DataProtocol {
     var dataName: String { return strDrink ?? "" }
     var dataImgUrl: String { return strDrinkThumb ?? "" }
+    var dataDescription: String { return "А тут могло бы быть описание, будь оно в API." }
 }
