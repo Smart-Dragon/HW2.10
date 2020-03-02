@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB51873240D76C000EF4601 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB51872240D76C000EF4601 /* Pokemon.swift */; };
+		9BB51875240D77FE00EF4601 /* PokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB51874240D77FE00EF4601 /* PokemonList.swift */; };
+		9BB51878240D793300EF4601 /* SourceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB51877240D793300EF4601 /* SourceDataManager.swift */; };
+		9BB844A5240D1F62002CDA62 /* DataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A4240D1F62002CDA62 /* DataProtocol.swift */; };
+		9BB844A8240D3C9F002CDA62 /* DataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A7240D3C9F002CDA62 /* DataViewCell.swift */; };
+		9BB844AA240D493C002CDA62 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A9240D493C002CDA62 /* ListProtocol.swift */; };
+		9BB844AC240D4A63002CDA62 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844AB240D4A63002CDA62 /* Dish.swift */; };
+		9BB844AE240D4B24002CDA62 /* DishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844AD240D4B24002CDA62 /* DishList.swift */; };
+		9BB844B0240D4BCC002CDA62 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844AF240D4BCC002CDA62 /* Source.swift */; };
 		9BF988C5240D0F80001EA1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988C4240D0F80001EA1E7 /* AppDelegate.swift */; };
 		9BF988C7240D0F80001EA1E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988C6240D0F80001EA1E7 /* SceneDelegate.swift */; };
-		9BF988C9240D0F80001EA1E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988C8240D0F80001EA1E7 /* ViewController.swift */; };
+		9BF988C9240D0F80001EA1E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988C8240D0F80001EA1E7 /* MainViewController.swift */; };
 		9BF988CC240D0F80001EA1E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF988CA240D0F80001EA1E7 /* Main.storyboard */; };
 		9BF988CE240D0F87001EA1E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF988CD240D0F87001EA1E7 /* Assets.xcassets */; };
 		9BF988D1240D0F87001EA1E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF988CF240D0F87001EA1E7 /* LaunchScreen.storyboard */; };
+		9BF988DC240D109E001EA1E7 /* Сocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988DB240D109E001EA1E7 /* Сocktail.swift */; };
+		9BF988DE240D113B001EA1E7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988DD240D113B001EA1E7 /* DataViewController.swift */; };
+		9BF988E0240D11A8001EA1E7 /* CocktailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF988DF240D11A8001EA1E7 /* CocktailList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BB51872240D76C000EF4601 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		9BB51874240D77FE00EF4601 /* PokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonList.swift; sourceTree = "<group>"; };
+		9BB51877240D793300EF4601 /* SourceDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDataManager.swift; sourceTree = "<group>"; };
+		9BB844A4240D1F62002CDA62 /* DataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProtocol.swift; sourceTree = "<group>"; };
+		9BB844A7240D3C9F002CDA62 /* DataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCell.swift; sourceTree = "<group>"; };
+		9BB844A9240D493C002CDA62 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
+		9BB844AB240D4A63002CDA62 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		9BB844AD240D4B24002CDA62 /* DishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishList.swift; sourceTree = "<group>"; };
+		9BB844AF240D4BCC002CDA62 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		9BF988C1240D0F80001EA1E7 /* HW2.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF988C4240D0F80001EA1E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF988C6240D0F80001EA1E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BF988C8240D0F80001EA1E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BF988C8240D0F80001EA1E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9BF988CB240D0F80001EA1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BF988CD240D0F87001EA1E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF988D0240D0F87001EA1E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BF988D2240D0F87001EA1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF988DB240D109E001EA1E7 /* Сocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Сocktail.swift"; sourceTree = "<group>"; };
+		9BF988DD240D113B001EA1E7 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		9BF988DF240D11A8001EA1E7 /* CocktailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BB51876240D791A00EF4601 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9BB51877240D793300EF4601 /* SourceDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		9BB844A3240D1E85002CDA62 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9BB844A4240D1F62002CDA62 /* DataProtocol.swift */,
+				9BB844A9240D493C002CDA62 /* ListProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9BB844A6240D3C74002CDA62 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9BB844A7240D3C9F002CDA62 /* DataViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
 		9BF988B8240D0F7F001EA1E7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +105,50 @@
 		9BF988C3240D0F80001EA1E7 /* HW2.10 */ = {
 			isa = PBXGroup;
 			children = (
+				9BB51876240D791A00EF4601 /* DataManagers */,
+				9BB844A3240D1E85002CDA62 /* Protocols */,
+				9BF988DA240D0FBC001EA1E7 /* Models */,
+				9BB844A6240D3C74002CDA62 /* ViewCells */,
+				9BF988D9240D0FB3001EA1E7 /* ViewControllers */,
+				9BF988D8240D0FA6001EA1E7 /* Storyboards */,
 				9BF988C4240D0F80001EA1E7 /* AppDelegate.swift */,
 				9BF988C6240D0F80001EA1E7 /* SceneDelegate.swift */,
-				9BF988C8240D0F80001EA1E7 /* ViewController.swift */,
-				9BF988CA240D0F80001EA1E7 /* Main.storyboard */,
 				9BF988CD240D0F87001EA1E7 /* Assets.xcassets */,
-				9BF988CF240D0F87001EA1E7 /* LaunchScreen.storyboard */,
 				9BF988D2240D0F87001EA1E7 /* Info.plist */,
 			);
 			path = HW2.10;
+			sourceTree = "<group>";
+		};
+		9BF988D8240D0FA6001EA1E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9BF988CA240D0F80001EA1E7 /* Main.storyboard */,
+				9BF988CF240D0F87001EA1E7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9BF988D9240D0FB3001EA1E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BF988C8240D0F80001EA1E7 /* MainViewController.swift */,
+				9BF988DD240D113B001EA1E7 /* DataViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9BF988DA240D0FBC001EA1E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BB844AF240D4BCC002CDA62 /* Source.swift */,
+				9BF988DB240D109E001EA1E7 /* Сocktail.swift */,
+				9BF988DF240D11A8001EA1E7 /* CocktailList.swift */,
+				9BB844AB240D4A63002CDA62 /* Dish.swift */,
+				9BB844AD240D4B24002CDA62 /* DishList.swift */,
+				9BB51872240D76C000EF4601 /* Pokemon.swift */,
+				9BB51874240D77FE00EF4601 /* PokemonList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +222,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF988C9240D0F80001EA1E7 /* ViewController.swift in Sources */,
+				9BB844AA240D493C002CDA62 /* ListProtocol.swift in Sources */,
+				9BB844AC240D4A63002CDA62 /* Dish.swift in Sources */,
+				9BF988C9240D0F80001EA1E7 /* MainViewController.swift in Sources */,
+				9BB51878240D793300EF4601 /* SourceDataManager.swift in Sources */,
+				9BF988DC240D109E001EA1E7 /* Сocktail.swift in Sources */,
+				9BB844A8240D3C9F002CDA62 /* DataViewCell.swift in Sources */,
+				9BF988DE240D113B001EA1E7 /* DataViewController.swift in Sources */,
+				9BB844AE240D4B24002CDA62 /* DishList.swift in Sources */,
+				9BF988E0240D11A8001EA1E7 /* CocktailList.swift in Sources */,
+				9BB844B0240D4BCC002CDA62 /* Source.swift in Sources */,
+				9BB51873240D76C000EF4601 /* Pokemon.swift in Sources */,
 				9BF988C5240D0F80001EA1E7 /* AppDelegate.swift in Sources */,
+				9BB51875240D77FE00EF4601 /* PokemonList.swift in Sources */,
+				9BB844A5240D1F62002CDA62 /* DataProtocol.swift in Sources */,
 				9BF988C7240D0F80001EA1E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.smartdragon.HW2-10";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
