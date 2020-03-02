@@ -20,8 +20,7 @@ extension MortyPerson: DataProtocol {
     var dataName: String { return name ?? "" }
     var dataImgUrl: String { return image ?? "" }
     
-    var dataDescription: String {
-        return
+    var dataDescription: String { return
 """
 Имя: \(dataName)
 Был в эпизодах:

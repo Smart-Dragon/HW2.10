@@ -21,8 +21,7 @@ struct Pokemon: Decodable {
 extension Pokemon: DataProtocol {
     var dataName: String { return name ?? "" }
     var dataImgUrl: String { return imageUrl ?? "" }
-    var dataDescription: String {
-        return
+    var dataDescription: String { return
 """
 Наименование: \(name ?? "")
 HP: \(hp ?? "")
