@@ -7,16 +7,27 @@
 //
 
 class SourceDataManager {
+    
+    // MARK: - Public Properties
+    
     static let shared = SourceDataManager()
+    
+    // MARK: - Public Methods
     
     func getSources() -> [Source] {
         [
-            Source(type: .cocktail, title: "Коктейли",
+            Source(type: .cocktail,
+                   title: "Коктейли",
                    url: "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail"),
-            Source(type: .delish, title: "Блюда",
+            Source(type: .delish,
+                   title: "Блюда",
                    url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"),
-            Source(type: .pokemon, title: "Покемоны",
-                   url: "https://api.pokemontcg.io/v1/cards")
+            Source(type: .pokemon,
+                   title: "Покемоны",
+                   url: "https://api.pokemontcg.io/v1/cards"),
+            Source(type: .morty,
+                   title: "Rick and Morty",
+                   url: "https://rickandmortyapi.com/api/character/")
         ]
     }
 }

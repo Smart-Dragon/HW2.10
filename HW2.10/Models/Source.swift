@@ -10,9 +10,13 @@ import Foundation
 
 class Source {
     
+    // MARK: - Public Properties
+    
     let type: SourceType
     let title: String
     let url: String
+    
+    // MARK: - Init
     
     init(type: SourceType, title: String, url: String) {
         self.type = type
@@ -20,8 +24,9 @@ class Source {
         self.url = url
     }
     
+    // MARK: - Public Methods
+    
     func getItems(from data: Data) -> [DataProtocol] {
-        
         do {
             let decoder = JSONDecoder()
             var list: ListProtocol?
@@ -30,8 +35,10 @@ class Source {
                     list = try decoder.decode(CocktailList.self, from: data)
                 case .delish:
                     list = try decoder.decode(DishList.self, from: data)
-                default:
+                case .pokemon:
                     list = try decoder.decode(PokemonList.self, from: data)
+                default:
+                    list = try decoder.decode(MortyPersonList.self, from: data)
             }
             return list?.items ?? []
         } catch let error {
@@ -45,4 +52,5 @@ enum SourceType {
     case cocktail
     case delish
     case pokemon
+    case morty
 }
