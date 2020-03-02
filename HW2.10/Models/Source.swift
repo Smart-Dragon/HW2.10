@@ -40,7 +40,7 @@ class Source {
                 default:
                     list = try decoder.decode(MortyPersonList.self, from: data)
             }
-            return list?.items ?? []
+            return list?.items.sorted(by: { $0.dataName < $1.dataName}) ?? []
         } catch let error {
             print(error)
         }
