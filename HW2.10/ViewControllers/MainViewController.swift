@@ -32,6 +32,8 @@ class MainViewController: UIViewController {
         showSpinner()
         guard let contentUrl = URL(string: source.url) else { return }
         
+        // Сетевой запрос только в одном месте, поэтому NetworkManager
+        // посчитал излишним
         URLSession.shared.dataTask(with: contentUrl) { (data, _, _) in
             guard let data = data else { return }
             self.items = source.getItems(from: data)
