@@ -15,6 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dataCenter" translatesAutoresizingMaskIntoConstraints="NO" id="wYf-TP-Twy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZG-FQ-egC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-ZE-MnT">
                                 <rect key="frame" x="79.5" y="278" width="216.5" height="111"/>
                                 <subviews>
@@ -26,10 +33,10 @@
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq7-mA-ZXt">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq7-mA-ZXt">
                                         <rect key="frame" x="0.0" y="49" width="216.5" height="62"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="shadowOffset" width="2" height="2"/>
@@ -37,10 +44,19 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="wYf-TP-Twy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Awo-FA-pni"/>
+                            <constraint firstAttribute="bottom" secondItem="QZG-FQ-egC" secondAttribute="bottom" id="BVU-cL-b5S"/>
+                            <constraint firstAttribute="trailing" secondItem="QZG-FQ-egC" secondAttribute="trailing" id="Irw-RX-UZt"/>
                             <constraint firstItem="ORv-ZE-MnT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XO3-GL-tjo"/>
+                            <constraint firstItem="QZG-FQ-egC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Zgx-g9-xA7"/>
+                            <constraint firstAttribute="trailing" secondItem="wYf-TP-Twy" secondAttribute="trailing" id="cQ8-E0-EtG"/>
+                            <constraint firstItem="wYf-TP-Twy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="dpp-vn-b2u"/>
+                            <constraint firstItem="ORv-ZE-MnT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="-389" id="iEo-IR-twv"/>
                             <constraint firstItem="ORv-ZE-MnT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iOI-S7-qWc"/>
+                            <constraint firstAttribute="bottom" secondItem="wYf-TP-Twy" secondAttribute="bottom" id="igg-oF-iv1"/>
+                            <constraint firstItem="QZG-FQ-egC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="inQ-zr-GL5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,4 +66,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dataCenter" width="540" height="360"/>
+    </resources>
 </document>
