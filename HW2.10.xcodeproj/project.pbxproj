@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9BB5187A240D841500EF4601 /* MortyPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB51879240D841500EF4601 /* MortyPerson.swift */; };
 		9BB5187C240D84A800EF4601 /* MortyPersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5187B240D84A800EF4601 /* MortyPersonList.swift */; };
 		9BB5187E240D92D300EF4601 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5187D240D92D300EF4601 /* DetailViewController.swift */; };
+		9BB51882240F072100EF4601 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB51881240F072100EF4601 /* NetworkManager.swift */; };
 		9BB844A5240D1F62002CDA62 /* DataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A4240D1F62002CDA62 /* DataProtocol.swift */; };
 		9BB844A8240D3C9F002CDA62 /* DataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A7240D3C9F002CDA62 /* DataViewCell.swift */; };
 		9BB844AA240D493C002CDA62 /* ListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB844A9240D493C002CDA62 /* ListProtocol.swift */; };
@@ -38,6 +39,7 @@
 		9BB51879240D841500EF4601 /* MortyPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyPerson.swift; sourceTree = "<group>"; };
 		9BB5187B240D84A800EF4601 /* MortyPersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortyPersonList.swift; sourceTree = "<group>"; };
 		9BB5187D240D92D300EF4601 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9BB51881240F072100EF4601 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9BB844A4240D1F62002CDA62 /* DataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProtocol.swift; sourceTree = "<group>"; };
 		9BB844A7240D3C9F002CDA62 /* DataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCell.swift; sourceTree = "<group>"; };
 		9BB844A9240D493C002CDA62 /* ListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocol.swift; sourceTree = "<group>"; };
@@ -86,7 +88,6 @@
 				C2644B33490EFCC8D0143466 /* Pods-HW2.10.debug.xcconfig */,
 				F23C1F05194C0023E4369106 /* Pods-HW2.10.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,6 +97,14 @@
 				9BB51877240D793300EF4601 /* SourceDataManager.swift */,
 			);
 			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		9BB5188324105D4600EF4601 /* NetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9BB51881240F072100EF4601 /* NetworkManager.swift */,
+			);
+			path = NetworkManagers;
 			sourceTree = "<group>";
 		};
 		9BB844A3240D1E85002CDA62 /* Protocols */ = {
@@ -136,6 +145,7 @@
 		9BF988C3240D0F80001EA1E7 /* HW2.10 */ = {
 			isa = PBXGroup;
 			children = (
+				9BB5188324105D4600EF4601 /* NetworkManagers */,
 				9BB51876240D791A00EF4601 /* DataManagers */,
 				9BB844A3240D1E85002CDA62 /* Protocols */,
 				9BF988DA240D0FBC001EA1E7 /* Models */,
@@ -300,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB51882240F072100EF4601 /* NetworkManager.swift in Sources */,
 				9BB844AA240D493C002CDA62 /* ListProtocol.swift in Sources */,
 				9BB5187A240D841500EF4601 /* MortyPerson.swift in Sources */,
 				9BB844AC240D4A63002CDA62 /* Dish.swift in Sources */,
