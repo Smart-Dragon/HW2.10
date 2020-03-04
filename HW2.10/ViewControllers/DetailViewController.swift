@@ -27,6 +27,8 @@ class DetailViewController: UIViewController {
         setupUI()
     }
     
+    // MARK: - Private Methods
+    
     private func setupUI() {
         
         itemTextView.text = item.dataDescription

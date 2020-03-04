@@ -10,7 +10,11 @@ import Alamofire
 
 class NetworkManager {
     
+    // MARK: - Public Properties
+    
     static let shared = NetworkManager()
+    
+    // MARK: - Public Methods
     
     func fetchData(with source: Source, completion: @escaping ([DataProtocol]) -> Void) {
         AF.request(source.url).validate().responseData() { (response) in
